@@ -1,0 +1,8 @@
+Switch>enable 
+Switch#configure 
+Switch(config)#ip dhcp snooping 
+Switch(config)#ip dhcp snooping vlan 10
+Switch(config)#ip dhcp snooping vlan 20
+Switch(config)#no ip dhcp snooping information option 
+Switch(config)#interface gigabitEthernet 0/1
+Switch(config-if)#ip dhcp snooping trust 
